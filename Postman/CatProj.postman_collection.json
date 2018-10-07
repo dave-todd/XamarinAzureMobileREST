@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "1608f5fb-c3ea-44ba-bd68-096f00a14ac5",
+		"name": "CatProj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://catproj.azurewebsites.net/tables/EleSubset/2?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/tables/EleSubset/2?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"tables",
+						"EleSubset",
+						"2"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://catproj.azurewebsites.net/tables/EleItem/2?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/tables/EleItem/2?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"tables",
+						"EleItem",
+						"2"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://catproj.azurewebsites.net/tables/EleItem?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/tables/EleItem?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"tables",
+						"EleItem"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://catproj.azurewebsites.net/tables/CatItem/3e3ace68-7a1f-491a-a932-18595e3a9982?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/tables/CatItem/3e3ace68-7a1f-491a-a932-18595e3a9982?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"tables",
+						"CatItem",
+						"3e3ace68-7a1f-491a-a932-18595e3a9982"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://catproj.azurewebsites.net/tables/CatItem/3e3ace68-7a1f-491a-a932-18595e3a9982?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/tables/CatItem/3e3ace68-7a1f-491a-a932-18595e3a9982?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"tables",
+						"CatItem",
+						"3e3ace68-7a1f-491a-a932-18595e3a9982"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://catproj.azurewebsites.net/tables/CatItem?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n        \"deleted\": false,\n        \"updatedAt\": \"2018-09-14T09:22:32.424Z\",\n        \"createdAt\": \"2018-09-14T09:22:32.315Z\",\n        \"version\": \"AAAAAAAAB9I=\",\n        \"id\": \"3e3ace68-7a1f-491a-a932-18595e3a9982\",\n        \"os\": \"POSTMAN\",\n        \"name\": \"Songs About Birds\"\n    }"
+				},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/tables/CatItem?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"tables",
+						"CatItem"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://catproj.azurewebsites.net/tables/CatItem?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/tables/CatItem?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"tables",
+						"CatItem"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://catproj.azurewebsites.net/tables/TodoItem?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/tables/TodoItem?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"tables",
+						"TodoItem"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://catproj.azurewebsites.net/api/values?ZUMO-API-VERSION=2.0.0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://catproj.azurewebsites.net/api/values?ZUMO-API-VERSION=2.0.0",
+					"protocol": "http",
+					"host": [
+						"catproj",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"values"
+					],
+					"query": [
+						{
+							"key": "ZUMO-API-VERSION",
+							"value": "2.0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

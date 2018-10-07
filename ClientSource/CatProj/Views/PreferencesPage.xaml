@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CatProj.PreferencesPage" NavigationPage.HasNavigationBar="False">
+
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout x:Name="topBar" Grid.Row="0" Padding="5,5,5,5">
+            <Label x:Name="categoryName" TextColor="#555555" Text="Preferences" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Padding="5,5,5,5">
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Sound" />
+                <Switch x:Name="soundSwitch" IsToggled="True" Toggled="OnSoundToggle" />
+            </StackLayout>
+            
+            <Picker x:Name="colourPicker" Title="Colour Theme" SelectedIndexChanged="OnPickerChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Red</x:String>
+                        <x:String>Green</x:String>
+                        <x:String>Blue</x:String>
+                        <x:String>Yellow</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+        </StackLayout>
+
+        <StackLayout x:Name="bottomBar" Grid.Row="2" Padding="5,5,5,5" Orientation="Horizontal">
+            <Button Text="Cancel" Clicked="OnCancel" />
+            <Button Text="Save" Clicked="OnSave" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>

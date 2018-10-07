@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CatProj.EleList" NavigationPage.HasNavigationBar="False">
+
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ActivityIndicator Grid.RowSpan="3" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False" IsEnabled="True" x:Name="syncIndicator"/>
+
+        <StackLayout x:Name="topBar" Grid.Row="0" Padding="5,5,5,5" Orientation="Horizontal">
+            <Label x:Name="categoryName" TextColor="#555555" Text="Categories" />
+            <Button Text="P" WidthRequest="50" Clicked="OnPreferences" HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+
+        <ListView x:Name="eleList" Grid.Row="1" ItemSelected="OnSelected" IsPullToRefreshEnabled="true" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                        </ViewCell.ContextActions>
+                        <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="5,5,0,0">
+                            <StackLayout Padding="5,0,0,0" VerticalOptions="StartAndExpand" Orientation="Vertical">
+                                <Label Text="{Binding Name}"  />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackLayout x:Name="bottomBar" Grid.Row="2" Padding="5,5,5,5">
+            <Entry x:Name="newItemName" Placeholder="Item name" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                <Button Text="+" WidthRequest="50" Clicked="OnAdd" />
+                <Button Text="R" WidthRequest="50" Clicked="OnRename" />
+                <Button Text="-" WidthRequest="50" Clicked="OnDelete" />
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>
