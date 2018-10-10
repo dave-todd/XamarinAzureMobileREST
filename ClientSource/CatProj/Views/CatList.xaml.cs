@@ -63,6 +63,8 @@ namespace CatProj
 
         public async void OnAdd(object sender, EventArgs e)
         {
+            if (newItemName.Text.Trim() == "") { return; }
+
             if (await DisplayAlert("Add?", "Would you like to Add category {" + newItemName.Text + "}", "Yes", "No"))
             {
                 CatItem item = new CatItem();
@@ -87,6 +89,8 @@ namespace CatProj
 
         public async void OnRename(object sender, EventArgs e)
         {
+            if (newItemName.Text.Trim() == "") { return; }
+
             if (await DisplayAlert("Rename?", "Would you like to Rename category {" + current.Name + "} to {" + newItemName.Text + "}", "Yes", "No"))
             {
                 current.Name = newItemName.Text;

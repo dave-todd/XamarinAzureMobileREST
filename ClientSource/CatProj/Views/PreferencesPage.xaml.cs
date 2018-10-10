@@ -32,6 +32,7 @@ namespace CatProj
 
         public void OnCancel(object sender, EventArgs e)
         {
+            Preferences.Instance.LoadSettings();
             Library.PlayClick();
             Navigation.PopAsync();
         }
